@@ -30,7 +30,7 @@ const request = store.put({ id: 1, value: content });
 // Get confirmation of the request.
 const result = await request;
 console.log('🚀 - data saved to the database', result);
-return result;}
+}
 
 // TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
@@ -51,6 +51,6 @@ const request = store.getAll();
 // Get confirmation of the request.
 const result = await request;
 console.log('result.value', result);
-return result;}
+}
 
 initdb();
